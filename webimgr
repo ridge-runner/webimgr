@@ -15,14 +15,14 @@ set -euo pipefail
 # webimgr <directory>
 # Output: img.webp, img.avif
 
-if [ "$#" -ne 1]; then
+if [ "$#" -ne 1 ]; then
 	echo "Usage: $0 <directory-path>"
 	exit 1
 fi
 
-directory = $1
+directory=$1
 
-if [! -d "$directory"]; then
+if [ ! -d "$directory" ]; then
 	echo "Directory does not exist: $directory"
 	exit 1
 fi
