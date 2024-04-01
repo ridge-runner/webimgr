@@ -13,4 +13,5 @@ Drop script into any directory on `$PATH` (e.g., `~/bin`).
 ## USE:
 `webimgr <path/to/directory>`
 Output: img.webp, img.avif
+
 Original *.jpg and *.jpeg files will remain unchanged.
