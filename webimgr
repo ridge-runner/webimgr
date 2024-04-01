@@ -35,7 +35,9 @@ found_files=false
 # Modify the pattern as needed to match the image file types you're working with
 
 for file in "$directory"/*.{jpg,jpeg}; do
-	if [ -e "file" ]; then # check if the glob gets expanded to existing files.
+	if [ -e "$file" ]; then 
+	# check if the glob gets expanded to existing files.
+		found_files=true
 		
 		# Perform your image conversion operation here
 		echo "Processing $file"
